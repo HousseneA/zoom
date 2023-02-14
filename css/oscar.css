@@ -1,0 +1,46 @@
+body{
+	background-image: url("diapo/8.jpg");
+}
+#form{
+	position: absolute;
+	left: 70%;
+}
+#farm{
+	background: #fafa;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 0px #0ff;
+
+
+}
+nav{
+
+    color: #327344;
+}
+
+
+
+
+
+
+
+from math import *
+class app:
+    def __init__(self):
+        self.a = int(input("entrer le nombre : "))
+        self.b = int(input("entrer le nombre : "))
+        self.c = int(input("entrer le nombre : "))
+        self.u = float(pow(self.b,2)-(4*self.a*self.c))
+        self.v = float(sqrt(self.u))
+        if self.v >=0:
+            self.z = ((-self.b) +(self.v))/(self.a)*2
+            self.x = ((-self.b)-(self.v))/(self.a)*2
+
+            print(self.z , " et ", self.x)
+        else:
+            print("pas de solution")
+
+z = app()
+
+
+
